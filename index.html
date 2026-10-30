@@ -8,13 +8,10 @@
 </head>
 <body>
 
-<!-- ── Header ── -->
-<header>
-  <h1>Expense &amp; Budget Visualizer</h1>
-  <button id="themeToggle">🌙 Dark Mode</button>
-</header>
-
 <div class="container">
+
+  <!-- ── Page Title ── -->
+  <h1 class="page-title">Expense &amp; Budget Visualizer</h1>
 
   <!-- ── Total Balance ── -->
   <div class="card balance-card">
@@ -53,7 +50,7 @@
     <button id="addBtn">Add Transaction</button>
   </div>
 
-  <!-- ── Transactions + Chart ── -->
+  <!-- ── Transactions + Chart side by side ── -->
   <div class="bottom-grid">
 
     <!-- Transactions list -->
@@ -70,7 +67,7 @@
       </div>
       <div class="tx-list" id="txList"></div>
 
-      <!-- Optional Challenge 4: Spending limit -->
+      <!-- Optional Challenge 4: Spending limit highlight -->
       <div class="limit-row">
         <label for="limitInput">⚠ Highlight over $</label>
         <input id="limitInput" type="number" placeholder="e.g. 20" min="0" step="0.01" />
@@ -95,6 +92,11 @@
       <select id="yearSelect"></select>
     </div>
     <div class="summary-grid" id="summaryGrid"></div>
+  </div>
+
+  <!-- Optional Challenge 3: Dark/Light Mode -->
+  <div style="text-align:center; margin-top:8px;">
+    <button id="themeToggle">🌙 Dark Mode</button>
   </div>
 
 </div><!-- /container -->

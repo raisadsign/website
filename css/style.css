@@ -41,48 +41,35 @@ body {
   transition: background .25s, color .25s;
 }
 
-/* ── Header ── */
-header {
-  background: var(--surface);
-  border-bottom: 1px solid var(--border);
-  padding: 16px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: var(--shadow);
-}
-
-header h1 {
-  font-size: 1.25rem;
+/* ── Page Title ── */
+.page-title {
+  text-align: center;
+  font-size: 1.4rem;
   font-weight: 800;
+  color: var(--text);
+  padding: 8px 0 4px;
   letter-spacing: -.3px;
 }
 
-/* ── Theme Toggle ── */
+/* ── Theme Toggle (inline, bottom of page) ── */
 #themeToggle {
   background: var(--border);
   border: none;
   cursor: pointer;
   border-radius: 20px;
-  padding: 6px 14px;
-  font-size: .8rem;
+  padding: 8px 20px;
+  font-size: .82rem;
   font-weight: 700;
   color: var(--muted);
   transition: background .2s, color .2s;
-  display: flex;
-  align-items: center;
-  gap: 6px;
 }
 #themeToggle:hover { background: var(--accent); color: #fff; }
 
 /* ── Layout ── */
 .container {
-  max-width: 900px;
+  max-width: 680px;
   margin: 0 auto;
-  padding: 24px 16px 60px;
+  padding: 28px 16px 60px;
   display: flex;
   flex-direction: column;
   gap: 20px;
